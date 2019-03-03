@@ -13,6 +13,7 @@
 ">
     <!--第零步：配置加载数据库文件 db.properties-->
     <context:property-placeholder location="classpath:db.properties"/>
+
     <!--第一步：配置数据源-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <!--属性注入-->
@@ -39,7 +40,7 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!--属性注入-->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-        <property name="basePackage" value="com.qf.admin.dao"/>
+        <property name="basePackage" value="com.gnnu.admin.dao"/>
     </bean>
     <!--第四步：扫描注解类-->
 

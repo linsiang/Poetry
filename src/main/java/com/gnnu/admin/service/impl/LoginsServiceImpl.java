@@ -1,8 +1,8 @@
-package com.qf.admin.service.impl;
+package com.gnnu.admin.service.impl;
 
-import com.qf.admin.dao.LoginDao;
-import com.qf.admin.pojo.po.People;
-import com.qf.admin.service.LoginService;
+import com.gnnu.admin.dao.LoginDao;
+import com.gnnu.admin.pojo.po.People;
+import com.gnnu.admin.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

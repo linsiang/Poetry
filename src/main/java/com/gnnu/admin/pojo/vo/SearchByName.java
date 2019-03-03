@@ -1,4 +1,4 @@
-package com.qf.admin.pojo.vo;
+package com.gnnu.admin.pojo.vo;
 
 public class SearchByName {
     private String poetry_author;

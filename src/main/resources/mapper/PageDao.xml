@@ -2,21 +2,21 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qf.admin.dao.PageDao">
-    <select id="findByPage" parameterType="com.qf.admin.pojo.vo.Page"  resultType="com.qf.admin.pojo.po.Poetry">
+<mapper namespace="com.gnnu.admin.dao.PageDao">
+    <select id="findByPage" parameterType="com.gnnu.admin.pojo.vo.Page" resultType="com.gnnu.admin.pojo.po.Poetry">
    select * from poetry  limit #{offset},#{pageSize}
     </select>
-  <select id="findAll"  resultType="com.qf.admin.pojo.po.Poetry">
+  <select id="findAll"  resultType="com.gnnu.admin.pojo.po.Poetry">
      select * from poetry
   </select>
     <delete id="dedleteById" parameterType="int">
         delete from poetry where poetry_id=#{id}
     </delete>
 
-    <select id="searchByName" parameterType="com.qf.admin.pojo.vo.SearchByName" resultType="com.qf.admin.pojo.po.Poetry">
+    <select id="searchByName" parameterType="com.gnnu.admin.pojo.vo.SearchByName" resultType="com.gnnu.admin.pojo.po.Poetry">
         select * from poetry where poetry_author=#{poetry_author} limit #{offset},#{pageSize}
     </select>
-    <select id="findAllByName" parameterType="java.lang.String" resultType="com.qf.admin.pojo.po.Poetry">
+    <select id="findAllByName" parameterType="java.lang.String" resultType="com.gnnu.admin.pojo.po.Poetry">
         select  * from poetry where poetry_author=#{poetry_author}
     </select>
  </mapper>

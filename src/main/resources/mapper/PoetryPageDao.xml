@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qf.admin.dao.PoetryPageDao">
-    <select id="findPoetryByPage" parameterType="com.qf.admin.pojo.vo.PoetryPage" resultType="com.qf.admin.pojo.po.Poetry">
+<mapper namespace="com.gnnu.admin.dao.PoetryPageDao">
+    <select id="findPoetryByPage" parameterType="com.gnnu.admin.pojo.vo.PoetryPage" resultType="com.gnnu.admin.pojo.po.Poetry">
         select * from poetry where poetry_author="白居易"
     </select>
  <delete id="deletePoetry" parameterType="Integer">
@@ -11,17 +11,17 @@
  </delete>
 
 
-    <insert id="reallAddPoetry" parameterType="com.qf.admin.pojo.po.Poetry" >
+    <insert id="reallAddPoetry" parameterType="com.gnnu.admin.pojo.po.Poetry" >
 
     insert into poetry set poetry_title= #{poetry_title},poetry_body=#{poetry_body},poetry_author=#{poetry_author},poetry_dynasty=#{poetry_dynasty}
     </insert>
 
-    <select id="toUpdatePoetry" resultType="com.qf.admin.pojo.po.Poetry">
+    <select id="toUpdatePoetry" resultType="com.gnnu.admin.pojo.po.Poetry">
       select * from poetry where poetry_id=#{id}
 
     </select>
 
-    <update id="updatePoetry"  parameterType="com.qf.admin.pojo.po.Poetry">
+    <update id="updatePoetry"  parameterType="com.gnnu.admin.pojo.po.Poetry">
         update poetry set poetry_title=#{poetry_title},poetry_body=#{poetry_body},
                           poetry_author=#{poetry_author},poetry_dynasty=#{poetry_dynasty} where poetry_id=#{poetry_id}
     </update>

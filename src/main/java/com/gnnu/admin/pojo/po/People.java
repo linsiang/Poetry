@@ -1,4 +1,4 @@
-package com.qf.admin.pojo.po;
+package com.gnnu.admin.pojo.po;
 
 public class People {
     private String uname;

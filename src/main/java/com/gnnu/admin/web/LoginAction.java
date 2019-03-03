@@ -1,14 +1,11 @@
-package com.qf.admin.web;
+package com.gnnu.admin.web;
 
-import com.qf.admin.pojo.po.People;
-import com.qf.admin.service.LoginService;
-import com.qf.admin.service.PageService;
+import com.gnnu.admin.pojo.po.People;
+import com.gnnu.admin.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class LoginAction {

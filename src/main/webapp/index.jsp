@@ -21,7 +21,25 @@
 </head>
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/css/bootstrap.css"></script>
+
+<style type="text/css">
+
+    #disappare{border:3px solid #ccc;border-radius: 5px;background: #fff;font-size: 20px;
+        width: 300px;height: 250px;position: fixed;top:50%;left: 50%;margin:-125px 0 0 -150px;}
+    #disappare h2{height: 35px;line-height: 35px;background: #ddd;text-indent: 5px;}
+    #disappare p{padding: 5px;font-size: 16px;}
+</style>
 <body>
+
+
+<div id="content">
+
+    <div id="disappare" style="display:none;">
+
+        <p>登录成功！！</p>
+    </div>
+</div>
+
 <div id="particles-js">
     <div class="login">
         <div class="login-top" align="center">
@@ -77,7 +95,7 @@
                         removeClass(document.querySelector(".login"), "active")
                         removeClass(document.querySelector(".sk-rotating-plane"), "active")
                         document.querySelector(".login").style.display = "block"
-                        alert("你个垃圾，尽然被你登录成功了？！");
+                        $("#disappare").show().delay(1000).hide(300);
                         window.location.href="pageVo";
                     },2000)
                 };
@@ -93,7 +111,7 @@
                     removeClass(document.querySelector(".login"), "active")
                     removeClass(document.querySelector(".sk-rotating-plane"), "active")
                     document.querySelector(".login").style.display = "block"
-                    alert("用户名或者密码错误！！你个垃圾，登录失败！！")
+                    alert("用户名或者密码错误！！登录失败！！")
                 },3000)
 
             },

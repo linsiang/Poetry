@@ -124,20 +124,6 @@ $("#toLogin").click(function(){
 	    ele.className = newClass.replace(/^\s+|\s+$/g, '');
 	  }
 	}
-		/* document.querySelector(".login-button").onclick = function(){
-				addClass(document.querySelector(".login"), "active")
-				setTimeout(function(){
-					addClass(document.querySelector(".sk-rotating-plane"), "active")
-					document.querySelector(".login").style.display = "none"
-				},800)
-				setTimeout(function(){
-					removeClass(document.querySelector(".login"), "active")
-					removeClass(document.querySelector(".sk-rotating-plane"), "active")
-					document.querySelector(".login").style.display = "block"
-					alert("登录成功")
-					window.location.href="http://www.baidu.com";
-				},3000)
-		} */
 </script>
 </body>
 </html>

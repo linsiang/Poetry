@@ -1,6 +1,6 @@
-package com.qf.admin.service;
+package com.gnnu.admin.service;
 
-import com.qf.admin.pojo.po.People;
+import com.gnnu.admin.pojo.po.People;
 
 public interface LoginService {
 

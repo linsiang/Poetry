@@ -2,8 +2,8 @@
         <!DOCTYPE mapper
                 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qf.admin.dao.UserDao">
-        <select id="listUsers" resultType="com.qf.admin.pojo.po.User">
+<mapper namespace="com.gnnu.admin.dao.UserDao">
+        <select id="listUsers" resultType="com.gnnu.admin.pojo.po.User">
                 select * from tb_user
         </select>
 

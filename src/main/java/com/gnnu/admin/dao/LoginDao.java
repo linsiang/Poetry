@@ -1,6 +1,6 @@
-package com.qf.admin.dao;
+package com.gnnu.admin.dao;
 
-import com.qf.admin.pojo.po.People;
+import com.gnnu.admin.pojo.po.People;
 
 public interface LoginDao {
     People checkLogin(People user);
