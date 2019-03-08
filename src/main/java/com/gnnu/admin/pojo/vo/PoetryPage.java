@@ -8,7 +8,7 @@ public class PoetryPage {
 
       private int currentPage=1;
       private int totalPage;
-      private int pageSize=10;
+      private int pageSize=9;
       private int offset;
       private List<Poetry> poetryDate;
 

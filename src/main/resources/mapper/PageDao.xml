@@ -14,9 +14,12 @@
     </delete>
 
     <select id="searchByName" parameterType="com.gnnu.admin.pojo.vo.SearchByName" resultType="com.gnnu.admin.pojo.po.Poetry">
-        select * from poetry where poetry_author=#{poetry_author} limit #{offset},#{pageSize}
+        select * from poetry where poetry_author like concat('%',#{poetry_author},'%') or poetry_title like concat('%',#{poetry_author},'%') limit #{offset},#{pageSize}
     </select>
     <select id="findAllByName" parameterType="java.lang.String" resultType="com.gnnu.admin.pojo.po.Poetry">
-        select  * from poetry where poetry_author=#{poetry_author}
+        select  * from poetry where poetry_author like concat('%',#{poetry_author},'%') or poetry_title like concat('%',#{poetry_author},'%')
+    </select>
+    <select id="countPage">
+        select  count(*) from poetry
     </select>
  </mapper>

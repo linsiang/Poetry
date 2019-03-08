@@ -9,7 +9,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>分页查询结果</title>
+    <title>诗词后台管理系统</title>
     <link rel="stylesheet" href="css/div边框.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
@@ -27,44 +27,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                    <ul class="nav navbar-nav">
-                        <li >
-                            <a href="#">
 
-
-                                <button type="button" class="btn btn-default" >霹雳诗词</button>
-
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> <button type="button" class="btn btn-default" >名家诗词</button></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <button type="button" class="btn btn-default" >更多</button><strong class="caret"></strong></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">网友自创</a>
-                                </li>
-                                <li>
-                                    <a href="#">祥锅出品</a>
-                                </li>
-                                <li>
-                                    <a href="#">己亥杂诗</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">Separated link</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">One more separated link</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
                     <div style="float: right">
                     <form class="navbar-form navbar-left" role="search" action="searchByName" method="post">
                         <div class="form-group" >

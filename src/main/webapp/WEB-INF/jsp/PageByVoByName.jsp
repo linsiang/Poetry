@@ -9,7 +9,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>分页查询结果</title>
+    <title>诗词后台管理系统</title>
     <link rel="stylesheet" href="css/div边框.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
@@ -21,43 +21,12 @@
         <div class="col-md-12 column">
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="pageVo">首页</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button><a href="pageVo"><button type="button" class="btn btn-default" >首页</button></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="#">霹雳诗词</a>
-                        </li>
-                        <li>
-                            <a href="#">名家诗词</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉选<strong class="caret"></strong></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another action</a>
-                                </li>
-                                <li>
-                                    <a href="#">Something else here</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">Separated link</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">One more separated link</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+
                     <div style="float: right">
                         <form class="navbar-form navbar-left" role="search" action="searchByName" method="post">
                             <div class="form-group" >
@@ -65,9 +34,9 @@
                                 <input type="text" class="form-control" name="poetry_author" />
                             </div> <button type="submit" class="btn btn-default" >查询</button>
                         </form>
-
+                          <a href="toAddPoetry">
                         <button type="button" class="btn btn-default" style="margin-top: 8.5px">增加诗词</button>
-
+                          </a>
                     </div>
 
                 </div>

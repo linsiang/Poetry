@@ -50,45 +50,13 @@
             </div>
         </div>
 
-
-
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
+                <a href="pageVo"> <button type="button" class="btn btn-default">放弃</button>  </a>
                 <button type="submit" class="btn btn-default">Hand On</button>
             </div>
         </div>
     </form>
 </div>
 </body>
-
-<%--<body>--%>
-         <%--<form action="addPoetry" method="post">--%>
-              <%--<table>--%>
-
-
-                      <%--&lt;%&ndash;<tr>   <td>&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;id:  <input type="text" name="poetry_id ">&ndash;%&gt;--%>
-                      <%--&lt;%&ndash;</td> </tr>&ndash;%&gt;--%>
-                      <%--<tr>   <td>--%>
-                          <%--题目:  <input type="text" name="poetry_title">--%>
-                      <%--</td> </tr>--%>
-                      <%--<tr>   <td>--%>
-                          <%--作者:  <input type="text" name="poetry_author">--%>
-
-                      <%--</td> </tr>--%>
-                      <%--<tr>   <td>--%>
-                          <%--诗词体:  <input type="text" name="poetry_body">--%>
-                      <%--</td> </tr>--%>
-                      <%--<tr>   <td>--%>
-                          <%--朝代:  <input type="text" name="poetry_dynasty">--%>
-                      <%--</td> </tr>--%>
-                 <%--<tr>--%>
-                     <%--<td>--%>
-                         <%--<input type="submit" value="HandOn"/>--%>
-                     <%--</td>--%>
-                 <%--</tr>--%>
-              <%--</table>--%>
-
-         <%--</form>--%>
-<%--</body>--%>
 </html>

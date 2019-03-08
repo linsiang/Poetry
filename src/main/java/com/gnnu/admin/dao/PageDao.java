@@ -17,4 +17,6 @@ public interface PageDao {
     List<Poetry> searchByName(SearchByName search);
 
     List<Poetry> findAllByName(String poetry_author);
+
+    int countPage();
 }

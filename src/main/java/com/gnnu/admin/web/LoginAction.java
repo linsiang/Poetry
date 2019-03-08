@@ -16,7 +16,7 @@ public class LoginAction {
     public People loginServlet(People user){
 
        user = loginService.chechLogin(user);
-       System.out.println(user);
+       //System.out.println(user);
        return user;
     }
 }

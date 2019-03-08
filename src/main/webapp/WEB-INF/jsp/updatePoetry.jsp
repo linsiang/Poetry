@@ -56,7 +56,7 @@
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <a href="pageVo"> <button type="button" class="btn btn-default">放弃修改</button></a>
-            <button type="submit" class="btn btn-default">确定修改</button>
+          <a href="pageVo?currentPage='${currentPage}'"> <button type="submit" class="btn btn-default">确定修改</button>  </a>
         </div>
     </div>
 </form>

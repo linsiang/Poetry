@@ -39,4 +39,19 @@ public class PageServiceImpl implements PageService {
     public List<Poetry> findALLByName(String poetry_author) {
         return pageDao.findAllByName(poetry_author);
     }
+
+    @Override
+    public int findPageById(int id) {
+        Page page = new Page();
+        //得到总的数据是pageCount
+        int pageCount=0;
+        pageCount= pageDao.countPage();
+        System.out.println(pageCount);
+
+        //当前页的计算为（pageCount-1）/pageSize
+        int currentPage = (pageCount-1)/page.getPageSize();
+        return currentPage;
+    }
+
+
 }

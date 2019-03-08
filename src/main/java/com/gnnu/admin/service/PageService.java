@@ -18,4 +18,6 @@ public interface PageService {
     List<Poetry> searchByName(SearchByName search);
 
     List<Poetry> findALLByName(String poetry_author);
+
+    int findPageById(int id);
 }
