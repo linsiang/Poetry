@@ -20,7 +20,7 @@ public class UserAction {
     public String listUsers(Model model){
          List<User> list  = userDao.listUsers();
          model.addAttribute("list",list);
-         return "index";
+         return "/index.jsp";
          }
       @RequestMapping(value = "/fucker" )
     public String shit(){
