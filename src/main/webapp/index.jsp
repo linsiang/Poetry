@@ -41,7 +41,7 @@
 <div id="particles-js">
     <div class="login">
         <div class="login-top" align="center">
-            <p style="margin: auto">登录后台管理系统</p>
+            <p style="align-items: center;">欢迎登录后台管理</p>
         </div>
         <div class="login-center clearfix">
             <div class="login-center-img"><img src="img/name.png"/></div>
